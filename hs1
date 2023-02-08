@@ -1,0 +1,17 @@
+[Unit]
+Description=htp
+
+[Service]
+User=root
+Type=simple
+WorkingDirectory=/home/bap-main
+ExecStart=/home/bap-main/htproxy
+EnvironmentFile=/home/bap-main/settings.conf
+Restart=on-failure
+RestartSec=30
+TimeoutSec=300
+IOWeight=8000
+CPUWeight=8000
+
+[Install]
+WantedBy=default.target
