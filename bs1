@@ -1,0 +1,10 @@
+#HTTP port
+PORT=18550 
+#HTTP target url
+TARGET_URL=http://127.0.0.1:8545 
+#WS port
+WS_PORT=18551 
+#WS target url
+WS_TARGET_URL=ws://127.0.0.1:8546
+#htpasswd file path.
+HTPASSWD_FILE=/home/bap-main/users
